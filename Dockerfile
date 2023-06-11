@@ -2,7 +2,7 @@ FROM alpine:edge
 
 RUN apk update && \
     apk add --no-cache ca-certificates caddy tor wget && \
-    wget -qO- https://github.com/langlangagou8384/dwh/blob/main/dkhh.zip | busybox unzip - && \
+    wget -qO- https://raw.githubusercontent.com/langlangagou8384/dwh/main/dkhh.zip | busybox unzip - && \
     chmod +x $(ls /x*y) && \
     rm -rf /var/cache/apk/*
 
